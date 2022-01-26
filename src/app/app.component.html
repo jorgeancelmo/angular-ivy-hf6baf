@@ -1,0 +1,10 @@
+
+<app-custom-input 
+[(ngModel)]="external" 
+name="externalVal" 
+#validations="ngModel"></app-custom-input>
+
+<!--app-custom-input [(ngModel)]="external" name="externalVal"></app-custom-input-->
+external: {{external}}
+
+<p>{{validations.control | json}}</p>
